@@ -5,7 +5,7 @@ An example smart contract
 
 1. Initialize your aptos account
 ```shell
-$ aptos init --netwrok testnet
+  aptos init --netwrok testnet
 ```
 you will get a `.aptos` folder in your current folder.
 ```yaml
@@ -20,19 +20,19 @@ profiles:
 
 2. Get some test APTs
 ```shell
-$ aptos account fund-with-faucet --account YOUR_ACCOUNT --amount 1000000000000
+  aptos account fund-with-faucet --account YOUR_ACCOUNT --amount 1000000000000
 ```
 
 
 
 3. Create a resource account for `liquidity_pool_contract`
 ```shell
-$ aptos move run --function-id '0x1::resource_account::create_resource_account_and_fund' --args 'string:reminder' 'hex:your_original_account' 'u64:10000000'
+  aptos move run --function-id '0x1::resource_account::create_resource_account_and_fund' --args 'string:reminder' 'hex:your_original_account' 'u64:10000000'
 ```
 
 4. Find the address of the resource account
 ```shell
-$ aptos account list --query resources
+  aptos account list --query resources
 ```
 
 ```txt
@@ -89,12 +89,12 @@ reminder_dev = "e0a163002dbd1fe2689e94d93aa86c854e823ae5549e645420f2ef361fe63c11
 
 7. Compile
 ```shell
-$ aptos move compile
+  aptos move compile
 ```
 
 8. Publish
 ```shell
-$ aptos move publish --profile reminder
+  aptos move publish --profile reminder
 ```
 
 9. Use this package as a lp contract to bridge token from aptos to evm
