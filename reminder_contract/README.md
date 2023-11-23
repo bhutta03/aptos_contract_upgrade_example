@@ -20,7 +20,7 @@ profiles:
 
 2. Get some test APTs
 ```shell
-aptos account fund-with-faucet --account YOUR_ACCOUNT --amount 1000000000000
+aptos account fund-with-faucet --account YOUR_ORIGINAL_ACCOUNT --amount 1000000000000
 ```
 
 
