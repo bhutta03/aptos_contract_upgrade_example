@@ -5,7 +5,7 @@ An example smart contract
 
 1. Initialize your aptos account
 ```shell
-aptos init --netwrok testnet
+aptos init --network testnet
 ```
 you will get a `.aptos` folder in your current folder.
 ```yaml
